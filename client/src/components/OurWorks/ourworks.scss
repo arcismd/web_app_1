@@ -1,0 +1,101 @@
+.our-works-section {
+    text-align: center;
+    margin: 100px 5px 85px 5px;
+    color: rgb(94, 63, 36);
+
+    h1 {
+        span {
+            color: rgb(163, 139, 117);
+        }
+    }
+
+    h3 {
+        max-width: 1240px;
+        margin: 0 auto;
+        margin-top: 15px;
+
+        span {
+            background-color: rgb(163, 139, 117);
+            color: rgb(255, 255, 255);
+            padding: 0 2px;
+        }
+    }
+}
+
+.our-works-section-categories {
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .img-position {
+        width: 32%;
+        overflow: hidden;
+        margin-top: 20px;
+        position: relative;
+
+        .img-effect {
+            opacity: .8;
+            transition: transform .5s, filter 1.5s ease-in-out;
+            filter: grayscale(80%);
+
+            &:hover {
+                cursor: pointer;
+                filter: grayscale(0);
+                transform: scale(1.1);
+            }
+
+            h3 {
+                position: absolute;
+                right: 0px;
+                left: 50px;
+                bottom: 11.2px;
+                color: rgb(255, 255, 255);
+                margin: 0;
+                padding-left: 7px;
+                opacity: 1;
+                background: rgba(204, 195, 157, 0.3);
+                text-transform: uppercase;
+                font-family: 'Alumni Sans Pinstripe', sans-serif;
+                font-size: 1.7rem;
+                visibility: visible;
+    
+                .element-color {
+                    color: black;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1240px) {
+    .our-works-section-categories {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (max-width: 850px) {
+    .our-works-section-categories {
+        max-width: 100vw;
+        .img-position {
+            width: 49%;
+
+            img {
+                min-width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .our-works-section-categories {
+        .img-position {
+            width: 100%;
+
+            img {
+                min-width: 100%;
+            }
+        }
+    }
+}

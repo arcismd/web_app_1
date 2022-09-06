@@ -1,1 +1,1 @@
-# web_app_1
+# jewelry-web-app

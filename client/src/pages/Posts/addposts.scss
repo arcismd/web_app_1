@@ -1,0 +1,130 @@
+.addposts-wrapper {
+
+    h1 {
+        margin-top: 25px;
+        text-align: center;
+        color: rgb(94, 63, 36);
+    
+        span {
+            display: block;
+            text-decoration: overline;
+            color: rgb(94, 63, 36, .6);
+        }
+    }
+    
+    
+    .addposts-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .categories {
+            background: antiquewhite;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;;
+        }
+        @media(max-width:600px) {
+            .categories {
+                flex-direction: column;
+        }
+    }
+    
+        button {
+            margin: 0px 10px;
+            padding: 8px;
+            background: #b3967c;
+        border: none;
+        border-radius: 8px;
+        color: #401c00;
+        opacity: .8;
+        transition: .3s;
+    
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+    
+        .flex-post-image {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: bisque;
+            padding: 10px;
+    
+            .post-image {
+                margin: 0 auto;
+                max-width: 270px;
+            }
+    
+            .delete-image-btn {
+                margin-top: 10px;
+                margin-bottom: -10px;
+            }
+        }
+    
+        .select-cat {
+            opacity: 1;
+            border: 1px dashed rgb(94, 63, 36);
+            background: transparent;
+    
+            &:focus {
+                border: 1px dashed transparent;
+                background: #b3967c;
+              }
+        }
+        @media(max-width:600px) {
+            .select-cat {
+                width: 60%;
+                margin: 5px 0;
+        }
+    }
+    
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+    
+        input {
+            all: unset;
+        }
+    
+        input {
+            margin: 5px 0;
+            padding: 10px 10px 0px 0px;
+            border-bottom: 1px dashed rgb(214, 187, 151);
+            opacity: .6;
+            font-size: 1.3rem;
+            color: rgb(94, 63, 36);
+            min-width: 340px;
+    
+            &:focus {
+                border-bottom: 1px dashed rgb(126, 80, 20);
+                opacity: 1;
+            }
+    
+            &:active {
+                
+            }
+    
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    
+    .flex-bottom-btns {
+        margin: 25px 0;
+
+        .pub-btn {
+            background: rgb(171, 255, 171);
+        }
+    }
+    }
+}

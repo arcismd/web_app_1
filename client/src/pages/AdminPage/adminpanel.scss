@@ -1,0 +1,17 @@
+.ap-wrapper {
+    min-width: 100vw;
+    margin-top: 25px;
+    color: rgb(94, 63, 36);
+
+    h1 {
+        margin-top: 25px;
+        text-align: center;
+        color: rgb(94, 63, 36);
+    
+        span {
+            display: block;
+            text-decoration: overline;
+            color: rgb(94, 63, 36, .6);
+        }
+    }
+}

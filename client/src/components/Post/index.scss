@@ -1,0 +1,126 @@
+.bijuterie-box {
+    
+    .bijuterie-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0px 5px 0px;
+        text-align: center;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            text-decoration: overline;
+            color: rgb(43, 24, 0);
+        }
+    }
+
+    .full-post-img {
+        
+    }
+
+    .full-flex-items {
+        max-width: 1240px;
+        margin: 0 auto;
+        margin-top: 25px;
+        display: flex;
+        background: bisque;
+
+        .item {
+            width: 100%;
+        }
+
+        .item-2 {
+            box-shadow: rgba(250, 235, 215, 0.4) -5px 5px, rgba(250, 235, 215, 0.3) -10px 10px, rgba(250, 235, 215, 0.2) -15px 15px, rgba(250, 235, 215, 0.1) -20px 20px, rgba(250, 235, 215, 0.05) -25px 25px;
+        }
+
+        .item-1 {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 20px;
+            background-color: antiquewhite;
+            font-size: 3rem;
+            box-shadow: rgba(250, 235, 215, 0.4) 5px 5px, rgba(250, 235, 215, 0.3) 10px 10px, rgba(250, 235, 215, 0.2) 15px 15px, rgba(250, 235, 215, 0.1) 20px 20px, rgba(250, 235, 215, 0.05) 25px 25px;
+
+            .details {
+                color: rgb(43, 24, 0);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px dashed rgb(214, 184, 149);
+                margin-top: 25px;
+                font-family: "Alumni Sans Pinstripe", sans-serif;
+
+                p {
+                  font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.full-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    text-align: center;
+    color: rgb(94, 63, 36);
+
+    span {
+        font-size: 1rem;
+        margin-right: 10px;
+        color: rgb(211, 190, 173);
+    }
+}
+
+.full-h2 {
+    color: rgb(94, 63, 36);
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-right: 20px;
+
+    span {
+        display: block;
+    }
+}
+
+.call {
+    margin-top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    img {
+        background-color:  rgb(235, 164, 97);
+        border: 2px solid rgb(172, 83, 24);
+        border-radius: 50%;
+        padding: 2px;
+        height: 80px;
+        width: 80px;
+        box-shadow: 0 0 0 0 rgb(31, 17, 6);
+        transform: scale(1);
+        animation: pulse 2s infinite;
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(163, 89, 28, 0.7);
+            }
+        
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(175, 147, 94, 0);
+            }
+        
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(212, 133, 68, 0);
+            }
+        }
+    }
+}

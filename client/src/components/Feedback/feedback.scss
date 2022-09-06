@@ -1,0 +1,194 @@
+.feedback-section {
+    max-width: 1240px;
+    margin: 30px auto;
+    text-align: start;
+    color: rgb(156, 106, 63);
+
+    h1 {
+        color: rgb(156, 106, 63);
+        font-family: 'Alumni Sans Pinstripe', sans-serif;
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 1240px) {
+        h1 {
+            padding-left: 5px;
+        }
+    }
+    @media (max-width: 700px) {
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    .feedback {
+        width: 100%;
+        height: 400px;
+        background-color: antiquewhite;
+        border-radius: 18px;
+        display: flex;
+        justify-content: space-between;
+
+        .flex-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            width: 50%;
+        }
+        @media (max-width: 700px) {
+            .flex-left {
+                width: 100%;
+            }
+        }
+        @media (max-width: 400px) {
+            .flex-left {
+                padding-left: 0px;
+                align-items: center;
+            }
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+
+            p {
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+            }
+
+            img {
+                border-radius: 50%;
+                border: 2px dotted rgb(156, 106, 63);
+            }
+        }
+
+        button {
+            text-align: center;
+            background-image: linear-gradient(to right, #8a563f 0, #240d04 100%);
+            padding: 15px;
+            color: #fff;
+            max-width: 225px;
+            width: 100%;
+            height: 60px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 4px;
+            border: none;
+            opacity: .9;
+
+            a {
+                color: #fff;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-image: linear-gradient(to right, #240d04 0, #8a563f 100%);
+                opacity: 1;
+            }
+        }
+        @media (max-width: 700px) {
+            button {
+                display: none;
+            }
+        }
+        .button-mobile {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            background-image: linear-gradient(to right, #8a563f 0, #240d04 100%);
+            padding: 15px;
+            color: #fff;
+            height: 60px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 4px;
+            border: none;
+            opacity: .9;
+            display: none;
+
+            a {
+                color: #fff;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-image: linear-gradient(to right, #240d04 0, #8a563f 100%);
+                opacity: 1;
+            }
+        }
+        @media (max-width: 700px) {
+            .button-mobile {
+                display: block;
+            }
+        }
+    }
+    @media (max-width: 1240px) {
+        .feedback {
+            width: 99%;
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: 700px) {
+        .feedback {
+            flex-direction: column;
+            height: 100%;
+            width: 95%;
+        }
+    }
+
+  
+
+    .descr {
+    z-index: 2;
+    max-height: 320px;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 0px;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-top: 40px;
+    padding: 20px;
+    position: relative;
+    box-shadow: -10px 0px 40px 10px rgb(245, 220, 187);
+    }
+    @media (max-width: 700px) {
+        .descr {
+            width: 90%;
+            margin-right: 0px;
+            margin: auto;
+            margin-bottom: 30px;
+            box-shadow: 0px 0px 40px 10px rgb(245, 220, 187);
+        }
+    }
+
+    .descr:before {
+        position: absolute;
+        content: '';
+        top: 30px;
+        left: -15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 15px 20px 0;
+        border-color: transparent #fff transparent transparent;
+}
+@media (max-width: 700px) {
+    .descr:before {
+        top: -14px;
+        left: 20px;
+        border-width: 0 20px 15px 20px;
+        border-color: transparent transparent #fff transparent;
+    }
+}
+}
+
+@media (max-width: 700px) {
+    h2 {
+        margin-bottom: 30px;
+    }
+}

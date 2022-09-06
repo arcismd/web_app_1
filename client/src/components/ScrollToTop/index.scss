@@ -1,0 +1,89 @@
+.top-to-btm{
+    position: relative;
+  }
+  .fb-icon-position{
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 20;
+  }
+  .icon-position{
+    position: fixed;
+    bottom: 110px;
+    right: 25px;
+    z-index: 20;
+  }
+  .icon-style{
+    background-color:  rgb(244 229 215);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    animation: movebtn 3s ease-in-out infinite;
+    transition: all .5s ease-in-out;
+  }
+  .icon-style:hover{
+    animation: none;
+    background: #fff;
+    color:  rgb(163, 139, 117);
+    border: 2px solid rgb(163, 139, 117);
+  }
+  @keyframes movebtn {
+    0%{
+      transform: translateY(0px);
+    }
+    25%{
+      transform: translateY(10px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    75%{
+      transform: translateY(-10px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+  .fb-icon-style{
+    background-color:  rgb(167, 213, 240);
+    border: 2px solid rgb(134, 196, 231);
+    border-radius: 50%;
+    padding: 2px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    opacity: .6;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgb(9, 23, 221);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+} 
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 92, 116, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+  .fb-icon-style:hover{
+    background: #fff;
+    color:  rgb(163, 139, 117);
+    border: 2px solid #0082ff;
+    opacity: .8;
+    animation: none;
+  }

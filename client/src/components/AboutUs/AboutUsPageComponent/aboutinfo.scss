@@ -1,0 +1,142 @@
+.about-info {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    h1 {
+        text-align: center;
+        margin: 100px 0;
+        color: rgb(94, 63, 36);
+
+        span {
+            display: block;
+            color: rgb(163, 139, 117);
+        }
+
+        .line {
+            text-decoration: overline;
+        }
+    }
+
+    .flex-about-info {
+        width: 100%;
+        height: 100%;
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        
+        .first {
+            width: 50%;
+            opacity: .7;
+        }
+
+        .second {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                font-size: 1.6rem;
+                letter-spacing: .7px;
+                font-family: "Alumni Sans Pinstripe", sans-serif;
+                color: rgb(94, 63, 36);
+                text-align: justify;
+                margin: 0 15px 0 35px;
+                border-left: 1px dashed;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .flex-3-elements {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            width: 30%;
+            background-color: antiquewhite;
+            transition: .4s;
+
+            h2 {
+                margin-top: 25px;
+                text-align: center;
+                color: rgb(163, 139, 117);
+                letter-spacing: .3px;
+            }
+
+            img {
+                opacity: .6;
+                transition: .2s;
+            }
+
+            &:hover {
+
+                img {
+                    transform: rotate(20deg);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1240px) {
+    .about-info {
+        margin-left: 5px;
+        margin-right: 5px;
+
+        .flex-about-info {
+            flex-direction: column-reverse;
+
+            .first {
+                width: 100%;
+
+                img {
+                    min-width: 100%;
+                }
+            }
+
+            .second {
+                width: 100%;
+
+                h2 {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin: 0 15px;
+                    border-left: none;
+                    padding-left: 0px;
+                }
+            }
+        } 
+    }
+}
+@media (max-width: 700px) {
+    .about-info {
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .second {
+
+            h2 {
+                padding-bottom: 0px;
+            }
+        }
+
+        .flex-3-elements {
+            flex-direction: column;
+
+            .block {
+                width: 100%;
+                margin-top: 10px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
